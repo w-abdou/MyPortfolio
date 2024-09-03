@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worood M. Abdou</title>
+    <link rel="icon" href="icons/vee.png" type="image/png">
+    <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+    <div class="main-header">  </div>
+    <div class="icon-file">   <!-- grey X,sizeup--> 
+        <div class="resume-icon">
+            <a onclick="toggleFile('my-resume')">
+                <img src="icons/folder.png" alt="File Icon">
+                <div>MyResume</div>
+            </a>
+        </div>
+        <div class="projects-icon">
+            <a onclick="toggleFile('projects')">
+                <img src="icons/folder.png" alt="File Icon">
+                <div>MyProjects</div>
+            </a>
+        </div>
+    </div>
+
+    <div id="my-resume" class="content section-body" onclick="bringToFront(this)">
+        <div class="close-icon" onclick="toggleFile('my-resume'); event.stopPropagation();">
+            <img src="icons/close.png" alt="Close Icon">
+        </div>
+        <div class="fullscreen-icon" onclick="toggleFullscreen('my-resume'); event.stopPropagation();">
+            <img src="icons/full screen.png" alt="Fullscreen Icon">
+        </div>
+        <header class="header"> 
+            <h1>Worood Mohamed Abdou</h1>
+        </header>
+        <section class="section education"> 
+            <h2>Education</h2>
+            <p>Arab Academy for Science & Technology (AASTMT)<span>Smart Village, Giza, Egypt</span></p>
+            <p>&nbsp;Bachelor of Computing and Information Technology<span>July 2027</span></p> <!--fix typo--> 
+            <p>&nbsp;GPA:3.5 &nbsp; (as of Spring 2024) </p> <!--fix typo--> 
+            <div class="divider"></div>
+            <p>American High School Diploma</p>
+            <p>&nbsp;Graduated with perfect 4.0 GPA <span>Sep 2022 - July 2023</span></p>
+        </section>
+        <section class="section work-experience">
+            <h2>Work Experience</h2> 
+            <!--<h3>Private Association</h3> -->
+            <p>Math Teacher Assistant<span>Jan 2023 - Sep 2023</span></p> 
+            <p>&nbsp;- Correcting and grading ACT and EST Math assignments and exams using the answer key and personal expertise.</p>
+            <p>&nbsp;- Providing extra lessons for weaker students to help them improve.</p>
+        </section>
+        <section class="section certificates">
+            <h2>Certificates</h2> <!--p typo-->
+            <p>Web Development Training Course<span>CSCEP-Cairo-AASTMT (July 2024)</span></p>                
+            <p>&nbsp; - Worked on a DropShipping project and developed a fully functioning E-commerce store using WordPress.<br>&nbsp;Won First Place and got funded with hosting the store for a year.</p>
+            <p>&nbsp; -Created a personal website using HTML, CSS, JavaScript. <br> &nbsp;Ranked among the top three.</p>
+        </section>
+        <section class="section skills"> 
+            <h2>Skills</h2>
+            <strong>Programming Languages:</strong>
+            <div class="skills-container-1">
+                <div class="skill">
+                    <img src="icons/c lang.png" alt="C Icon">
+                </div>
+                <div class="skill">
+                    <img src="icons/html-5.png" alt="html Icon">
+                </div>
+                <div class="skill">
+                    <img src="icons/css-3.png" alt="css Icon">
+                </div>
+                <div class="skill">
+                    <img src="icons/java-script.png" alt="js Icon">
+                </div>
+                <div class="skill">
+                    <img src="icons/sql.png" alt="sql Icon">
+                </div>
+            </div>
+            <div class="divider"></div>
+                <strong>Microsoft:</strong>
+                <div class="skills-container-2">
+                    <div class="skill">
+                        <img src="icons/microsoft-access.png" alt="MS Access Icon">
+                    </div>
+                    <div class="skill">
+                        <img src="icons/word.png" alt="MS word Icon">
+                    </div>
+                    <div class="skill">
+                        <img src="icons/powerpoint.png" alt="MS PowerPoint Icon">
+                    </div>
+                    <div class="skill">
+                        <img src="icons/excel.png" alt="MS Exel Icon">
+                    </div>
+                </div>
+        </section>
+        <section class="section achievements">
+            <h2>Achievements</h2> 
+            <p>Team Leader<span>Dream Builders Club in AAST-SV</span></p>
+            <p>&nbsp; Planning weekly orientations for the new students and helping in the admission process.<span>(July 2024 - Present)</span></p>
+            <div class="divider"></div>
+            <p>Head of Marketing and Media Department<span>SUSV AAST-SV</span></p>
+            <p>&nbsp; Handling media coverage of any on-campus event and managing the social media accounts.<span>(Feb 2024 - Present)</span></p>      
+        </section>      
+        <section class="section languages">
+            <h2>Languages</h2>            
+                <b>Arabic:</b> Mother Tongue 
+                  <br>
+                <b>English:</b> Fluent                         
+        </section>
+        <section class="btn">
+            <button onclick="window.open('docs/Worood_Abdou.pdf', '_blank')">Download Resume PDF</button>
+        </section>
+    </div>
+
+    <div id="projects" class="content section-body" onclick="bringToFront(this)">
+        <div class="close-icon" onclick="toggleFile('projects'); event.stopPropagation();">
+            <img src="icons/close.png" alt="Close Icon">
+        </div>
+        <div class="fullscreen-icon" onclick="toggleFullscreen('projects'); event.stopPropagation();">
+            <img src="icons/full screen.png" alt="Fullscreen Icon">
+        </div>
+        <header class="header"> 
+            <h1>Projects</h1>
+        </header>
+        
+            <section class="section ">
+                <p>Cinema Ticketing System<span><a href="https://github.com/w-abdou/cinema-ticketing-system" class="github-link">View Code</a></span></p>
+                <p> &nbsp  A console-based application (written in C) allows users to view and book tickets for movies across different categories.
+                    The application manages movie categories, displays available movies, provides details for each movie, 
+                    and handles ticket booking, including editing bookings and calculating total prices.
+                </p> 
+            </section>
+            <section class="btn">
+                <button onclick="window.open('https://github.com/w-abdou', '_blank')">Github</button>
+            </section>
+    </div>
+
+    <footer class="footer">
+        <div class="icon-container">
+            <div id="icon-left" onclick="toggleIcons()">
+                <img src="icons/communicate.png" alt="Main Icon">
+                   <div class="small-icon-container">
+                       <a href="mailto:w@pravica.io" target="_blank">
+                           <img class="small-icon" src="icons/mail.png" alt="Email Icon ">
+                       </a>
+                       <a href="https://www.linkedin.com/in/worood-abdou/" target="_blank">
+                            <img class="small-icon" src="icons/linkedin.png" alt="LinkedIn Icon ">
+                       </a>
+                   </div>
+               </div>
+               <div id="icon-right">
+                <img src="icons/vee waving 2.svg" alt="Right Icon" onclick="toggleBubble()">
+                <div id="bubble">
+                    <img src="icons/intro bubble.svg" alt="Close" id="bubble" onclick="toggleBubble()" />
+                </div>
+            </div>
+        </div>
+    </footer>    
+
+    <script src="portfolio.js"></script>
+
+</body>
+</html>
